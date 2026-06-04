@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Controller.LoginController"
+      styleClass="root"
+      stylesheets="@style.css"
+      alignment="CENTER"
+      spacing="16"
+      prefWidth="420"
+      prefHeight="520">
+
+    <Label text="Banco Blend" styleClass="titulo"/>
+    <Label text="Acesse sua conta" styleClass="subtitulo"/>
+
+    <VBox styleClass="card" spacing="14">
+        <Label text="E-mail" styleClass="label-campo"/>
+        <TextField fx:id="emailField" promptText="seu@email.com" styleClass="campo"/>
+
+        <Label text="Senha" styleClass="label-campo"/>
+        <PasswordField fx:id="senhaField" promptText="••••••••" styleClass="campo"/>
+
+        <Button text="Entrar" styleClass="botao-primario"
+                onAction="#handleLogin" maxWidth="Infinity"/>
+
+        <Label text="Não tem conta? Cadastre-se"
+               styleClass="link" onMouseClicked="#irParaCadastro"
+               alignment="CENTER" maxWidth="Infinity"/>
+    </VBox>
+
+</VBox>

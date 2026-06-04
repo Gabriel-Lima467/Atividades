@@ -1,0 +1,68 @@
+.root {
+    -fx-background-color: #1a1a2e;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+.titulo {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+}
+
+.subtitulo {
+    -fx-text-fill: #a0a0b0;
+    -fx-font-size: 14px;
+}
+
+.card {
+    -fx-background-color: #16213e;
+    -fx-background-radius: 12;
+    -fx-padding: 32;
+    -fx-min-width: 340;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 20, 0, 0, 4);
+}
+
+.label-campo {
+    -fx-text-fill: #a0a0b0;
+    -fx-font-size: 12px;
+}
+
+.campo {
+    -fx-background-color: #0f3460;
+    -fx-text-fill: #ffffff;
+    -fx-prompt-text-fill: #555577;
+    -fx-background-radius: 8;
+    -fx-padding: 10 14;
+    -fx-font-size: 14px;
+    -fx-border-color: transparent;
+}
+
+.campo:focused {
+    -fx-border-color: #e94560;
+    -fx-border-radius: 8;
+    -fx-border-width: 1.5;
+}
+
+.botao-primario {
+    -fx-background-color: #e94560;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+    -fx-padding: 12;
+    -fx-cursor: hand;
+}
+
+.botao-primario:hover {
+    -fx-background-color: #c73652;
+}
+
+.link {
+    -fx-text-fill: #e94560;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+}
+
+.link:hover {
+    -fx-text-fill: #ffffff;
+}
