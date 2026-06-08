@@ -20,7 +20,15 @@ public class LoginController {
         String senha = senhaField.getText();
 
         if (CorrentistaDAO.Login(email, senha)){
-            System.out.println("Login bem sucedido!");
+            try {
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/principal.fxml"));
+                Scene scene = new Scene(loader.load());
+                Stage stage = (Stage) emailField.getScene().getWindow();
+                stage.setScene(scene);
+                stage.show();
+            } catch (Exception e) {
+                System.err.println("Erro ao carregar tela: " + e.getMessage());
+            }
         }else{
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Erro");
